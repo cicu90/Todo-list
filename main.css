@@ -1,0 +1,23 @@
+body{
+  min-height: 100vh;
+  display: flex;
+}
+#navbar{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.firstContainer{
+  display: flex;
+
+}
+.sidebar{
+  min-width: 300px;
+  background-color: aquamarine;
+}
+.mainContainer{
+  flex-grow: ;
+  display: flex;
+  flex-direction:column;
+  background-color: blue;
+}

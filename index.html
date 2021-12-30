@@ -13,7 +13,9 @@
 <body>
   <!--HEADER- The header page should contain the name of the project
 -->
-<header id="navbar" class="py-3 mb-3 border bottom">
+<main class="container-fluid">
+<section class="row">
+<header id="navbar" class="col py-3 mb-3 border bottom">
   <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
       <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
@@ -26,29 +28,34 @@
       <div class="flex-shrink-0 dropdown">
         <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle show" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="true">
           <img src="https://avatars.githubusercontent.com/u/91063081?v=4" alt="mdo" width="32" height="32" class="rounded-circle">
+          <img src="https://avatars.githubusercontent.com/u/50864697?s=400&v=4" alt="mdo" width="32" height="32" class="rounded-circle">
         </a>
         <ul class="dropdown-menu text-small shadow show" aria-labelledby="dropdownUser2" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(-110px, 34px, 0px);" data-popper-placement="bottom-end">
-          <li><a class="dropdown-item" href="#">New project...</a></li>
+          <!-- <li><a class="dropdown-item" href="#">New project...</a></li>
           <li><a class="dropdown-item" href="#">Settings</a></li>
           <li><a class="dropdown-item" href="#">Profile</a></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Sign out</a></li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li> -->
         </ul>
       </div>
     </div>
   </div>
   </div>
 </header>
-<main class="firstContainer d-flex p-2 bd-highlight">
+</section>
+  <section id="firstContainer" class="row d-flex p-2 bd-highlight">
   <!--SIDEBAR-->
-  <section class="sidebar col-3">
+  <div class="sidebar col-4">
     <div>
-      <button class="tasksBtn">
+      <button id="tasksBtn" class="tasksBtn">Tasks
       </button>
-      <button class="importBtn">
+      <button class="importBtn">Important
       </button>
-      <button class="completedBtn">
+      <button class="completedBtn">completed
       </button>
+      <div class="dropdown">Custom lists
+        
+      </div>
       <div class="dropdown list">
         <ul class="dropdownList">
           <li class="dropdown-items"></li>
@@ -58,11 +65,12 @@
         </ul>
       </div>
     </div>
-  </section>
+  </div>
   <!--main center-->
-  <div class="mainContainer col-9">
+  <div class="mainContainer col-8">
     <h1>Tasks</h1>
   </div>
+  </section>
 </main>
 </body>
 </html>

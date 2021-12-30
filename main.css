@@ -1,23 +1,21 @@
 body{
-  min-height: 100vh;
+  min-width: 100vh;
+}
+/*CSS CONTAINER*/
+#firstContainer{
   display: flex;
 }
-#navbar{
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-.firstContainer{
-  display: flex;
-
-}
+/*CSS SIDEBAR*/
 .sidebar{
-  min-width: 300px;
-  background-color: aquamarine;
-}
-.mainContainer{
-  flex-grow: ;
   display: flex;
-  flex-direction:column;
-  background-color: blue;
+  border: 1px solid;
+  align-items: stretch;
+}
+/*BUTTONS SIDEBAR*/
+
+/*CSS MAIN*/
+.mainContainer{
+  display: flex;
+  border: 1px solid;
+  align-items: stretch;
 }

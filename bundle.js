@@ -5673,19 +5673,18 @@
 },{}],2:[function(require,module,exports){
 var moment = require('moment');
 
-const Task={
-    title:"",
-    description:"",
-    dateInit: moment().format("MM DD YY"),
-    completed: false,
-    important: false
+
+ function TaskObject(title,description,dateInit,completed,important){
+    this.title=title;
+    this.description=description;
+    this.dateInit= dateInit;
+    this.completed= completed;
+    this.important= important;
 }
 
 
+var task1= new TaskObject("Estudiar");
+console.log(task1);
 
-console.log(Task);
-var date= new Date();
-Task.dateInit= moment(date).format("MMM Do YY");
-console.log(Task.dateInit);
-
+module.exports = TaskObject;
 },{"moment":1}]},{},[2]);

@@ -1,4 +1,4 @@
-//import {Task} from 'object.js';
+import TaskObject from './bundle';
 
 const tasks = document.getElementById("tasksBtn");
 const main = document.getElementById("main-content");

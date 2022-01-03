@@ -1,3 +1,5 @@
+//import {Task} from 'object.js';
+
 const tasks = document.getElementById("tasksBtn");
 const main = document.getElementById("main-content");
 

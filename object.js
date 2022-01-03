@@ -1,6 +1,6 @@
 var moment = require('moment');
 
-const Task={
+export const Task={
     title:"",
     description:"",
     dateInit: moment().format("MM DD YY"),

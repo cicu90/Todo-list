@@ -33,9 +33,39 @@ btn.addEventListener("click", function(){
  
  console.log(contador);
 
- var task_list = document.createElement("")
-  }
+ var task_list = document.createElement("input");
+ var salto = document.createElement('br');
+   var btn_eliminar = document.createElement('button');
+   btn_eliminar.innerText= "Eliminar";
+   btn_eliminar.type = 'button';
+   btn_eliminar.id = "btn"+contador;
+   input.type = 'text';
+   input.id = "input"+contador;
+   input.name = 'btn'+contador;
+   input.value = user.value;
+   input.setAttribute('disabled',''); // propiedad disabled
+   contenedor.append(salto);//todo lo agrego al div de almacenar
+   contenedor.append(input);
+   contenedor.append(btn_eliminar);
+   console.log(input);
+    console.log(btn_eliminar);
+  
+  var botones = document.getElementById('btn'+contador);
+  
+  botones.addEventListener('click', function(){
+     
+    var btn_id = document.getElementById(this.id);
+    
+    var input_name = document.querySelector('input[name='+this.id+']');
+       contenedor.removeChild(btn_id);
+       contenedor.removeChild(input_name);
+       contenedor.removeChild(salto);
+  
+  });
+  
+}
 });
+
 
 
 

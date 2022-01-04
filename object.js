@@ -1,4 +1,4 @@
-var moment = require('moment');
+//var moment = require('moment');
 
 
  function TaskObject(title,description,dateInit,completed,important){
@@ -10,7 +10,6 @@ var moment = require('moment');
 }
 
 
-var task1= new TaskObject("Estudiar");
-console.log(task1);
+//module.exports = TaskObject;
 
-module.exports = TaskObject;
+export default TaskObject;

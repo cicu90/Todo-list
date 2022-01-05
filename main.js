@@ -57,3 +57,31 @@ function showTaskList(taskObject){
   '</details>');
 }
 
+
+//merge
+// console.log(dataBase)
+// }
+
+// $('#addlist').on('click', function(){
+//   $('#dropList').append('<div id="dropList" class="dropdown list"><ul class="dropdownList"><li class="dropdown-items"></li></ul></div>');
+//   $("#btnAddTask").on("click", capture);
+// })
+// var newTask=new TaskObject();
+
+// const dataBase=[];
+
+
+// function capture(){
+//   var titleCapture = $('#name').val();
+//   var descCapture = $('#description').val();
+
+//   newTask = new TaskObject(titleCapture, descCapture);
+
+//   console.log(newTask);
+//   addDB();
+// };
+
+// function addDB(){
+//   dataBase.push(newTask);
+//   console.log(dataBase)
+// }

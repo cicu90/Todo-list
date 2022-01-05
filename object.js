@@ -1,13 +1,16 @@
 //var moment = require('moment');
 
 
- function TaskObject(title,description,dateInit,completed,important){
+ function TaskObject(title,description,important,completed){
     this.title=title;
     this.description=description;
-    this.dateInit= dateInit;
-    this.completed= completed;
     this.important= important;
+    this.completed= completed;
 }
+
+
+
+
 
 
 //module.exports = TaskObject;

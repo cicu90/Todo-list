@@ -81,7 +81,7 @@ function showTaskList(taskObject) {
   );
 }
 
-// function importatTasks(){
+// function importatTasks
 $("#importBtn").on("click", function () {
   $("#dinamic").empty();
   $("#taskList").empty();
@@ -92,7 +92,18 @@ $("#importBtn").on("click", function () {
     }
   }
 });
-// };
+
+// function completeTasks
+  $("#completedBtn").on("click", function () {
+    $("#dinamic").empty();
+    $("#taskList").empty();
+    for (const i in dataBase) {
+      if (dataBase[i].completed == true) {
+        $("#taskList").append(dataBase[i].title);
+        console.log(dataBase[i].title);
+      }
+    }
+  });
 
 //CUSTOM LISTS
 $("#addlist").on("click", function () {
